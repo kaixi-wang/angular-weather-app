@@ -711,7 +711,6 @@ let ApiService = class ApiService {
         this.http = http;
         this.localStorage = localStorage;
     }
-    // https://maps.googleapis.com/maps/api/geocode/json?address=$address&key=AIzaSyDzUBa0ehnG14CrCj0TD5xHIFJdg9SLGXA
     // address=[street, city,state]
     getLatLon(street, city, state) {
         const URL = 'api/geolocate?address=' + encodeURI(street) + ',' + encodeURI(city) + ',' + encodeURI(state);
